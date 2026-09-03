@@ -1,17 +1,19 @@
 about:
-  description: Server automation framework and application
+  description:
+  |
+    Server automation framework and application
   license: Apache-2.0
   homepage: https://puppet.com/open-source/#osp
   head: e227c27
   archived: false
   latestVersion: 8.10.0
-  collectedAt: 2026-09-03T05:26:43Z
+  collectedAt: 2026-09-03T22:34:23Z
 timeline:
   created: 2010-09-14
   lastCommit: 2024-12-11
   lastRelease: 2024-10-22
 popularity:
-  star: 7926
+  star: 7927
   watcher: 450
   fork: 2209
   release: 12
@@ -26,7 +28,7 @@ language:
   C#: 5195
   Pascal: 858
   Batchfile: 594
-totalLine: 13016533
+totalBytes: 13016533
 recent:
   last30d:
     since: 2026-08-04
