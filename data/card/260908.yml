@@ -5,7 +5,7 @@ about:
   head: e227c27
   archived: false
   latestVersion: "8.10.0"
-  collectedAt: 2026-09-08T02:49:03Z
+  collectedAt: 2026-09-08T05:41:18Z
 timeline:
   created: 2010-09-14
   lastCommit: 2024-12-11
@@ -85,7 +85,7 @@ total:
   commit: 35429
 ---
 path: /home/runner/.x-repo/github.com/puppetlabs/puppet
-collectedAt: 2026-09-08T02:49:15Z
+collectedAt: 2026-09-08T05:41:41Z
 loc:
   Ruby:
     code: 273190
