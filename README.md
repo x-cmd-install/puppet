@@ -1,24 +1,74 @@
 # puppet
 
+[中文版本](./README.cn.md)
+
 Server automation framework and application
 
-- **Upstream**: <https://github.com/puppetlabs/puppet>
-- **Homepage**: <https://puppet.com/open-source/#osp>
-- **Latest release**: `8.10.0` (2024-10-22)
-- **Last commit**: 2024-12-11
-- **License**: Apache-2.0
-- **Stars**: 7926 · **Forks**: 2209 · **Open issues**: 128 · **Contributors**: 588
+![puppet](https://repo.x-cmd.io/puppet.svg)
 
-## Installation
+## Install
 
 ```sh
 x install puppet
 ```
 
-See <https://x-cmd.com/install/puppet> for details.
+## Source
 
-## Data
+- **Upstream**: <https://github.com/puppetlabs/puppet>
+- **Homepage**: <https://puppet.com/open-source/#osp>
+- **License**: Apache-2.0
 
-This mirror is auto-maintained by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action). Latest card snapshot: `data/card/260909.yml`. Merged card+release view: `data/latest.report.yml`.
+## Release
 
-_Last regenerated: 2026-09-09T20:24:05Z._
+- **Latest**: `8.10.0` (2024-10-22)
+- **Last commit**: 2024-12-11
+- **Published**: 2024-10-22T15:15:06Z
+
+## Popularity
+
+- **Stars**: 7,926 · **Forks**: 2,209 · **Open issues**: 128 · **Contributors**: 588
+
+## Totals (cumulative)
+
+- **Releases**: 12 · **Merged PRs**: 7024 · **Open PRs**: 42 · **Closed issues**: 72 · **Open issues**: 56 · **Commits**: 35429
+
+## Recent activity
+
+| Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
+|---|---|---:|---:|---:|---:|---:|---:|
+| 30d | 2026-08-11 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 90d | 2026-06-12 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 360d | 2025-09-15 | 0 | 0 | 9 | 1 | 8 | 0 |
+
+## Code size
+
+Total: **318,969** lines of code across **2470** files in the top 5 languages.
+
+| Language | Code | Comments | Blanks | Files |
+|----------|-----:|---------:|-------:|------:|
+| Ruby | 273,190 | 38,618 | 56,889 | 2159 |
+| Json | 38,936 | 0 | 174 | 47 |
+| Puppet | 2,119 | 126 | 327 | 175 |
+| Yaml | 1,766 | 49 | 47 | 76 |
+| Rakefile | 1,473 | 212 | 230 | 13 |
+
+## OpenSSF Scorecard
+
+Overall score: **3.5 / 10**
+
+Lowest-scoring checks:
+
+- **Maintained** (0/10) — 0 commit(s) and 0 issue activity found in the last 90 days -- score normalized to 0
+- **Packaging** (-1/10) — packaging workflow not detected
+- **Token-Permissions** (0/10) — detected GitHub workflow tokens with excessive permissions
+
+## Improve this data
+
+Install metadata for puppet lives in the [x-cmd/install](https://github.com/x-cmd/install) index — a curated YAML package list that x-cmd consumes at install time. If `puppet` is missing, out of date, or installs incorrectly, please open an issue or PR there:
+
+- **Open an issue**: <https://github.com/x-cmd/install/issues/new>
+- **Edit the package entry**: <https://github.com/x-cmd/edit/main/puppet.yml> (or whichever path the index uses)
+
+The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
+
+_Snapshot: `data/card/260910.yml` · 2026-09-10T05:46:05Z._
