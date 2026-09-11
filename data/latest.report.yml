@@ -7,7 +7,7 @@ about:
   latestVersion: "8.10.0"
   latestRelease: "8.10.0"
   latestPrerelease: ""
-  collectedAt: 2026-09-11T05:46:08Z
+  collectedAt: 2026-09-11T19:06:41Z
 timeline:
   created: 2010-09-14
   lastCommit: 2024-12-11
@@ -15,7 +15,7 @@ timeline:
   lastRelease: 2024-10-22
   lastPrerelease: 
 popularity:
-  star: 7927
+  star: 7928
   watcher: 451
   fork: 2209
   release: 12
@@ -89,7 +89,7 @@ total:
   commit: 35429
 ---
 path: /home/runner/.x-repo/github.com/puppetlabs/puppet
-collectedAt: 2026-09-11T05:46:20Z
+collectedAt: 2026-09-11T19:06:56Z
 loc:
   Ruby:
     code: 273190
