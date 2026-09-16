@@ -267,4 +267,3 @@ checks:
       - 'Warn: One or no descriptive hints of disclosure, vulnerability, and/or timelines in security policy'
       - 'Info: Found text in security policy: github.com/puppetlabs/.github/SECURITY.md:1'
 ---
-{"id":181082634,"author":{"login":"cthorn42","id":8562586,"node_id":"MDQ6VXNlcjg1NjI1ODY=","gravatar_id":"","type":"User","user_view_type":"public","site_admin":false},"node_id":"RE_kwDOAA3lmM4KyxoK","tag_name":"7.34.0","target_commitish":"7.x","name":"7.34.0","draft":false,"immutable":false,"prerelease":false,"created_at":"2024-10-17T18:13:54Z","updated_at":"2024-10-22T15:15:06Z","published_at":"2024-10-22T15:15:06Z","assets":[],"body":"<!-- Release notes generated using configuration in .github/release.yml at 7.34.0 -->\r\n\r\n\r\n\r\n**Full Changelog**: https://github.com/puppetlabs/puppet/compare/7.33.0...7.34.0"}
