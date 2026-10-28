@@ -1,3 +1,17 @@
+- repo: fedora_39
+  subrepo: updates
+  srcname: puppet
+  binnames:
+    - puppet
+  visiblename: puppet
+  version: 8.3.1
+  origversion: 8.3.1-1.fc39
+  status: outdated
+  summary: Network tool for managing many disparate systems
+  licenses:
+    - Apache-2.0
+  categories:
+    - Unspecified
 - repo: arch
   subrepo: extra
   srcname: puppet
@@ -58,20 +72,6 @@
     - Apache-2.0
   categories:
     - Unspecified
-- repo: fedora_39
-  subrepo: updates
-  srcname: puppet
-  binnames:
-    - puppet
-  visiblename: puppet
-  version: 8.3.1
-  origversion: 8.3.1-1.fc39
-  status: outdated
-  summary: Network tool for managing many disparate systems
-  licenses:
-    - Apache-2.0
-  categories:
-    - Unspecified
 - repo: fedora_40
   subrepo: release
   srcname: puppet
@@ -101,6 +101,20 @@
   categories:
     - Unspecified
 - repo: fedora_42
+  subrepo: updates
+  srcname: puppet
+  binnames:
+    - puppet
+  visiblename: puppet
+  version: 8.10.0
+  origversion: 8.10.0-3.fc42
+  status: newest
+  summary: Network tool for managing many disparate systems
+  licenses:
+    - Apache-2.0
+  categories:
+    - Unspecified
+- repo: fedora_42
   subrepo: release
   srcname: puppet
   binnames:
@@ -114,14 +128,14 @@
     - Apache-2.0
   categories:
     - Unspecified
-- repo: fedora_42
+- repo: fedora_43
   subrepo: updates
   srcname: puppet
   binnames:
     - puppet
   visiblename: puppet
   version: 8.10.0
-  origversion: 8.10.0-3.fc42
+  origversion: 8.10.0-3.fc43
   status: newest
   summary: Network tool for managing many disparate systems
   licenses:
@@ -142,14 +156,14 @@
     - Apache-2.0
   categories:
     - Unspecified
-- repo: fedora_43
+- repo: fedora_44
   subrepo: updates
   srcname: puppet
   binnames:
     - puppet
   visiblename: puppet
   version: 8.10.0
-  origversion: 8.10.0-3.fc43
+  origversion: 8.10.0-5.fc44
   status: newest
   summary: Network tool for managing many disparate systems
   licenses:
@@ -170,20 +184,6 @@
     - Apache-2.0
   categories:
     - Unspecified
-- repo: fedora_44
-  subrepo: updates
-  srcname: puppet
-  binnames:
-    - puppet
-  visiblename: puppet
-  version: 8.10.0
-  origversion: 8.10.0-5.fc44
-  status: newest
-  summary: Network tool for managing many disparate systems
-  licenses:
-    - Apache-2.0
-  categories:
-    - Unspecified
 - repo: fedora_rawhide
   subrepo: development
   srcname: puppet
@@ -198,22 +198,6 @@
     - Apache-2.0
   categories:
     - Unspecified
-- repo: gentoo
-  srcname: app-admin/puppet
-  visiblename: app-admin/puppet
-  version: 8.6.0
-  origversion: 8.6.0-r1
-  status: legacy
-  summary: A system automation and configuration management software
-  maintainers:
-    - prometheanfire@gentoo.org
-    - sysadmin@gentoo.org
-    - ruby@gentoo.org
-  licenses:
-    - Apache-2.0
-    - GPL-2
-  categories:
-    - app-admin
 - repo: gentoo
   srcname: app-admin/puppet
   visiblename: app-admin/puppet
@@ -252,161 +236,6 @@
   version: 8.10.0
   origversion: 8.10.0-r1
   status: newest
-  summary: A system automation and configuration management software
-  maintainers:
-    - prometheanfire@gentoo.org
-    - sysadmin@gentoo.org
-    - ruby@gentoo.org
-  licenses:
-    - Apache-2.0
-    - GPL-2
-  categories:
-    - app-admin
-- repo: gentoo
-  srcname: app-admin/puppet
-  visiblename: app-admin/puppet
-  version: 8.9.0
-  origversion: null
-  status: legacy
-  summary: A system automation and configuration management software
-  maintainers:
-    - prometheanfire@gentoo.org
-    - sysadmin@gentoo.org
-    - ruby@gentoo.org
-  licenses:
-    - Apache-2.0
-    - GPL-2
-  categories:
-    - app-admin
-- repo: nix_stable_24_11
-  srcname: puppet
-  visiblename: puppet
-  version: 8.6.0
-  origversion: null
-  status: outdated
-  summary: Server automation framework and application
-  maintainers:
-    - nixpkgs@superbaloo.net
-  licenses:
-    - Apache-2.0
-- repo: nix_stable_25_05
-  srcname: puppet
-  visiblename: puppet
-  version: 8.6.0
-  origversion: null
-  status: outdated
-  summary: Server automation framework and application
-  maintainers:
-    - nixpkgs@superbaloo.net
-  licenses:
-    - Apache-2.0
-- repo: nix_stable_25_11
-  srcname: puppet
-  visiblename: puppet
-  version: 8.10.0
-  origversion: null
-  status: newest
-  summary: Server automation framework and application
-  maintainers:
-    - nixpkgs@superbaloo.net
-  licenses:
-    - Apache-2.0
-- repo: nix_stable_26_05
-  srcname: puppet
-  visiblename: puppet
-  version: 8.10.0
-  origversion: null
-  status: newest
-  summary: Server automation framework and application
-  maintainers:
-    - nixpkgs@superbaloo.net
-  licenses:
-    - Apache-2.0
-- repo: openmamba
-  subrepo: base
-  srcname: puppet
-  binnames:
-    - puppet
-  visiblename: puppet
-  version: 8.10.0
-  origversion: 8.10.0-1mamba
-  status: newest
-  summary: An automated administrative engine for your Linux, Unix, and Windows systems
-  maintainers:
-    - silvan.calarco@mambasoft.it
-  licenses:
-    - Apache License 2.0
-  categories:
-    - System/Management
-- repo: parabola
-  subrepo: extra
-  srcname: puppet
-  binname: puppet
-  visiblename: puppet
-  version: 8.10.0
-  origversion: 8.10.0-6
-  status: newest
-  summary: Server automation framework and application
-  licenses:
-    - Apache-2.0
-- repo: rosa_2019_1
-  subrepo: main/release
-  srcname: puppet
-  binnames:
-    - puppet
-  visiblename: puppet
-  version: 7.25.0
-  origversion: 7.25.0-1
-  status: outdated
-  summary: System Automation and Configuration Management Software
-  maintainers:
-    - i.gaptrakhmanov@rosalinux.ru
-  licenses:
-    - Apache Software License 2.0
-  categories:
-    - Monitoring
-- repo: rosa_13
-  subrepo: main/release
-  srcname: puppet
-  binnames:
-    - puppet
-  visiblename: puppet
-  version: 8.10.0
-  origversion: 8.10.0-2
-  status: newest
-  summary: System Automation and Configuration Management Software
-  maintainers:
-    - i.gaptrakhmanov@rosa.ru
-  licenses:
-    - Apache Software License 2.0
-  categories:
-    - Monitoring
-- repo: wikidata
-  srcname: Q2095962
-  visiblename: Puppet
-  version: 8.10.0
-  origversion: null
-  status: newest
-  summary: open source configuration management software
-  licenses:
-    - Apache Software License 2.0
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: puppet
-  binname: puppet
-  visiblename: puppet
-  version: 8.10.0
-  origversion: 8.10.0-6
-  status: newest
-  summary: Server automation framework and application
-  licenses:
-    - Apache-2.0
-- repo: gentoo
-  srcname: app-admin/puppet
-  visiblename: app-admin/puppet
-  version: 8.5.1
-  origversion: 8.5.1-r1
-  status: legacy
   summary: A system automation and configuration management software
   maintainers:
     - prometheanfire@gentoo.org
@@ -659,13 +488,136 @@
   summary: Server automation framework and application
   licenses:
     - Apache-2.0
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: puppet
+  binname: puppet
+  visiblename: puppet
+  version: 8.10.0
+  origversion: 8.10.0-6
+  status: newest
+  summary: Server automation framework and application
+  licenses:
+    - Apache-2.0
+- repo: nix_stable_24_11
+  srcname: puppet
+  visiblename: puppet
+  version: 8.6.0
+  origversion: null
+  status: outdated
+  summary: Server automation framework and application
+  maintainers:
+    - nixpkgs@superbaloo.net
+  licenses:
+    - Apache-2.0
+- repo: nix_stable_25_05
+  srcname: puppet
+  visiblename: puppet
+  version: 8.6.0
+  origversion: null
+  status: outdated
+  summary: Server automation framework and application
+  maintainers:
+    - nixpkgs@superbaloo.net
+  licenses:
+    - Apache-2.0
+- repo: nix_stable_25_11
+  srcname: puppet
+  visiblename: puppet
+  version: 8.10.0
+  origversion: null
+  status: newest
+  summary: Server automation framework and application
+  maintainers:
+    - nixpkgs@superbaloo.net
+  licenses:
+    - Apache-2.0
+- repo: nix_stable_26_05
+  srcname: puppet
+  visiblename: puppet
+  version: 8.10.0
+  origversion: null
+  status: newest
+  summary: Server automation framework and application
+  maintainers:
+    - nixpkgs@superbaloo.net
+  licenses:
+    - Apache-2.0
+- repo: openmamba
+  subrepo: base
+  srcname: puppet
+  binnames:
+    - puppet
+  visiblename: puppet
+  version: 8.10.0
+  origversion: 8.10.0-1mamba
+  status: newest
+  summary: An automated administrative engine for your Linux, Unix, and Windows systems
+  maintainers:
+    - silvan.calarco@mambasoft.it
+  licenses:
+    - Apache License 2.0
+  categories:
+    - System/Management
+- repo: parabola
+  subrepo: extra
+  srcname: puppet
+  binname: puppet
+  visiblename: puppet
+  version: 8.10.0
+  origversion: 8.10.0-6
+  status: newest
+  summary: Server automation framework and application
+  licenses:
+    - Apache-2.0
+- repo: rosa_2019_1
+  subrepo: main/release
+  srcname: puppet
+  binnames:
+    - puppet
+  visiblename: puppet
+  version: 7.25.0
+  origversion: 7.25.0-1
+  status: outdated
+  summary: System Automation and Configuration Management Software
+  maintainers:
+    - i.gaptrakhmanov@rosalinux.ru
+  licenses:
+    - Apache Software License 2.0
+  categories:
+    - Monitoring
+- repo: rosa_13
+  subrepo: main/release
+  srcname: puppet
+  binnames:
+    - puppet
+  visiblename: puppet
+  version: 8.10.0
+  origversion: 8.10.0-2
+  status: newest
+  summary: System Automation and Configuration Management Software
+  maintainers:
+    - i.gaptrakhmanov@rosa.ru
+  licenses:
+    - Apache Software License 2.0
+  categories:
+    - Monitoring
+- repo: wikidata
+  srcname: Q2095962
+  visiblename: Puppet
+  version: 8.10.0
+  origversion: null
+  status: newest
+  summary: open source configuration management software
+  licenses:
+    - Apache Software License 2.0
 - repo: amazon_1
   subrepo: main
-  srcname: puppet3
-  visiblename: puppet3
-  version: 3.7.4
-  origversion: 3.7.4-1.13.amzn1
-  status: outdated
+  srcname: puppet
+  visiblename: puppet
+  version: 2.7.25
+  origversion: 2.7.25-2.9.amzn1
+  status: legacy
   summary: A network tool for managing many disparate systems
   licenses:
     - ASL 2.0
@@ -674,11 +626,11 @@
   vulnerable: true
 - repo: amazon_1
   subrepo: main
-  srcname: puppet
-  visiblename: puppet
-  version: 2.7.25
-  origversion: 2.7.25-2.9.amzn1
-  status: legacy
+  srcname: puppet3
+  visiblename: puppet3
+  version: 3.7.4
+  origversion: 3.7.4-1.13.amzn1
+  status: outdated
   summary: A network tool for managing many disparate systems
   licenses:
     - ASL 2.0
@@ -754,6 +706,18 @@
   categories:
     - admin
   vulnerable: true
+- repo: openindiana
+  subrepo: hipster
+  srcname: puppet
+  binname: system/management/puppet/puppet-common
+  visiblename: puppet
+  version: 3.8.6
+  origversion: null
+  status: outdated
+  summary: Common OpenIndiana-specific components for Puppet
+  categories:
+    - System/Administration and Configuration
+  vulnerable: true
 - repo: macports
   srcname: sysutils/puppet
   binname: puppet
@@ -779,18 +743,6 @@
   origversion: null
   status: outdated
   summary: Puppet - configuration management toolkit
-  categories:
-    - System/Administration and Configuration
-  vulnerable: true
-- repo: openindiana
-  subrepo: hipster
-  srcname: puppet
-  binname: system/management/puppet/puppet-common
-  visiblename: puppet
-  version: 3.8.6
-  origversion: null
-  status: outdated
-  summary: Common OpenIndiana-specific components for Puppet
   categories:
     - System/Administration and Configuration
   vulnerable: true
@@ -925,31 +877,6 @@
     - admin
   vulnerable: true
 - repo: ubuntu_14_04
-  subrepo: trusty/main
-  srcname: puppet
-  binnames:
-    - puppet-common
-    - puppet
-    - puppetmaster-common
-    - puppetmaster
-    - puppetmaster-passenger
-    - vim-puppet
-    - puppet-el
-    - puppet-testsuite
-  visiblename: puppet
-  version: 3.4.3
-  origversion: 3.4.3-1
-  status: outdated
-  maintainers:
-    - pkg-puppet-devel@lists.alioth.debian.org
-    - apollock@debian.org
-    - micah@debian.org
-    - nigel@explanatorygap.net
-    - ssm@debian.org
-  categories:
-    - admin
-  vulnerable: true
-- repo: ubuntu_14_04
   subrepo: trusty-updates/main
   srcname: puppet
   binnames:
@@ -967,6 +894,31 @@
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
+    - apollock@debian.org
+    - micah@debian.org
+    - nigel@explanatorygap.net
+    - ssm@debian.org
+  categories:
+    - admin
+  vulnerable: true
+- repo: ubuntu_14_04
+  subrepo: trusty/main
+  srcname: puppet
+  binnames:
+    - puppet-common
+    - puppet
+    - puppetmaster-common
+    - puppetmaster
+    - puppetmaster-passenger
+    - vim-puppet
+    - puppet-el
+    - puppet-testsuite
+  visiblename: puppet
+  version: 3.4.3
+  origversion: 3.4.3-1
+  status: outdated
+  maintainers:
+    - pkg-puppet-devel@lists.alioth.debian.org
     - apollock@debian.org
     - micah@debian.org
     - nigel@explanatorygap.net
@@ -1073,26 +1025,6 @@
     - universe/admin
   vulnerable: true
 - repo: ubuntu_22_04
-  subrepo: jammy-updates/universe
-  srcname: puppet
-  binnames:
-    - puppet
-    - puppet-master
-    - puppet-master-passenger
-  visiblename: puppet
-  version: 5.5.22
-  origversion: 5.5.22-4ubuntu0.2
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - apoikos@debian.org
-    - apollock@debian.org
-    - micah@debian.org
-    - ssm@debian.org
-  categories:
-    - universe/admin
-  vulnerable: true
-- repo: ubuntu_22_04
   subrepo: jammy/universe
   srcname: puppet
   binnames:
@@ -1105,6 +1037,26 @@
   status: outdated
   maintainers:
     - pkg-puppet-devel@alioth-lists.debian.net
+    - apoikos@debian.org
+    - apollock@debian.org
+    - micah@debian.org
+    - ssm@debian.org
+  categories:
+    - universe/admin
+  vulnerable: true
+- repo: ubuntu_22_04
+  subrepo: jammy-updates/universe
+  srcname: puppet
+  binnames:
+    - puppet
+    - puppet-master
+    - puppet-master-passenger
+  visiblename: puppet
+  version: 5.5.22
+  origversion: 5.5.22-4ubuntu0.2
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
     - apoikos@debian.org
     - apollock@debian.org
     - micah@debian.org
