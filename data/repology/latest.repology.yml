@@ -1,17 +1,3 @@
-- repo: fedora_39
-  subrepo: updates
-  srcname: puppet
-  binnames:
-    - puppet
-  visiblename: puppet
-  version: 8.3.1
-  origversion: 8.3.1-1.fc39
-  status: outdated
-  summary: Network tool for managing many disparate systems
-  licenses:
-    - Apache-2.0
-  categories:
-    - Unspecified
 - repo: arch
   subrepo: extra
   srcname: puppet
@@ -34,6 +20,17 @@
   summary: Server automation framework and application
   licenses:
     - Apache-2.0
+- repo: nix_stable_25_11
+  srcname: puppet
+  visiblename: puppet
+  version: 8.10.0
+  origversion: null
+  status: newest
+  summary: Server automation framework and application
+  maintainers:
+    - nixpkgs@superbaloo.net
+  licenses:
+    - Apache-2.0
 - repo: epel_8
   srcname: puppet
   visiblename: puppet
@@ -52,6 +49,20 @@
   visiblename: puppet
   version: 7.27.0
   origversion: 7.27.0-1.el9
+  status: outdated
+  summary: Network tool for managing many disparate systems
+  licenses:
+    - Apache-2.0
+  categories:
+    - Unspecified
+- repo: fedora_39
+  subrepo: updates
+  srcname: puppet
+  binnames:
+    - puppet
+  visiblename: puppet
+  version: 8.3.1
+  origversion: 8.3.1-1.fc39
   status: outdated
   summary: Network tool for managing many disparate systems
   licenses:
@@ -313,22 +324,6 @@
 - repo: liguros_develop
   srcname: app-admin/puppet
   visiblename: app-admin/puppet
-  version: 8.5.1
-  origversion: 8.5.1-r1
-  status: legacy
-  summary: A system automation and configuration management software
-  maintainers:
-    - prometheanfire@gentoo.org
-    - sysadmin@gentoo.org
-    - ruby@gentoo.org
-  licenses:
-    - Apache-2.0
-    - GPL-2
-  categories:
-    - app-admin
-- repo: liguros_develop
-  srcname: app-admin/puppet
-  visiblename: app-admin/puppet
   version: 8.10.0
   origversion: 8.10.0-r1
   status: newest
@@ -364,38 +359,6 @@
   version: 8.10.0
   origversion: 8.10.0-r2
   status: newest
-  summary: A system automation and configuration management software
-  maintainers:
-    - prometheanfire@gentoo.org
-    - sysadmin@gentoo.org
-    - ruby@gentoo.org
-  licenses:
-    - Apache-2.0
-    - GPL-2
-  categories:
-    - app-admin
-- repo: liguros_develop
-  srcname: app-admin/puppet
-  visiblename: app-admin/puppet
-  version: 8.9.0
-  origversion: null
-  status: legacy
-  summary: A system automation and configuration management software
-  maintainers:
-    - prometheanfire@gentoo.org
-    - sysadmin@gentoo.org
-    - ruby@gentoo.org
-  licenses:
-    - Apache-2.0
-    - GPL-2
-  categories:
-    - app-admin
-- repo: liguros_develop
-  srcname: app-admin/puppet
-  visiblename: app-admin/puppet
-  version: 8.6.0
-  origversion: 8.6.0-r1
-  status: legacy
   summary: A system automation and configuration management software
   maintainers:
     - prometheanfire@gentoo.org
@@ -521,17 +484,6 @@
     - nixpkgs@superbaloo.net
   licenses:
     - Apache-2.0
-- repo: nix_stable_25_11
-  srcname: puppet
-  visiblename: puppet
-  version: 8.10.0
-  origversion: null
-  status: newest
-  summary: Server automation framework and application
-  maintainers:
-    - nixpkgs@superbaloo.net
-  licenses:
-    - Apache-2.0
 - repo: nix_stable_26_05
   srcname: puppet
   visiblename: puppet
@@ -613,11 +565,11 @@
     - Apache Software License 2.0
 - repo: amazon_1
   subrepo: main
-  srcname: puppet
-  visiblename: puppet
-  version: 2.7.25
-  origversion: 2.7.25-2.9.amzn1
-  status: legacy
+  srcname: puppet3
+  visiblename: puppet3
+  version: 3.7.4
+  origversion: 3.7.4-1.13.amzn1
+  status: outdated
   summary: A network tool for managing many disparate systems
   licenses:
     - ASL 2.0
@@ -626,11 +578,11 @@
   vulnerable: true
 - repo: amazon_1
   subrepo: main
-  srcname: puppet3
-  visiblename: puppet3
-  version: 3.7.4
-  origversion: 3.7.4-1.13.amzn1
-  status: outdated
+  srcname: puppet
+  visiblename: puppet
+  version: 2.7.25
+  origversion: 2.7.25-2.9.amzn1
+  status: legacy
   summary: A network tool for managing many disparate systems
   licenses:
     - ASL 2.0
@@ -706,18 +658,6 @@
   categories:
     - admin
   vulnerable: true
-- repo: openindiana
-  subrepo: hipster
-  srcname: puppet
-  binname: system/management/puppet/puppet-common
-  visiblename: puppet
-  version: 3.8.6
-  origversion: null
-  status: outdated
-  summary: Common OpenIndiana-specific components for Puppet
-  categories:
-    - System/Administration and Configuration
-  vulnerable: true
 - repo: macports
   srcname: sysutils/puppet
   binname: puppet
@@ -743,6 +683,18 @@
   origversion: null
   status: outdated
   summary: Puppet - configuration management toolkit
+  categories:
+    - System/Administration and Configuration
+  vulnerable: true
+- repo: openindiana
+  subrepo: hipster
+  srcname: puppet
+  binname: system/management/puppet/puppet-common
+  visiblename: puppet
+  version: 3.8.6
+  origversion: null
+  status: outdated
+  summary: Common OpenIndiana-specific components for Puppet
   categories:
     - System/Administration and Configuration
   vulnerable: true
