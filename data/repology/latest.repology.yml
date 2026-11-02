@@ -20,17 +20,6 @@
   summary: Server automation framework and application
   licenses:
     - Apache-2.0
-- repo: nix_stable_25_11
-  srcname: puppet
-  visiblename: puppet
-  version: 8.10.0
-  origversion: null
-  status: newest
-  summary: Server automation framework and application
-  maintainers:
-    - nixpkgs@superbaloo.net
-  licenses:
-    - Apache-2.0
 - repo: epel_8
   srcname: puppet
   visiblename: puppet
@@ -56,20 +45,6 @@
   categories:
     - Unspecified
 - repo: fedora_39
-  subrepo: updates
-  srcname: puppet
-  binnames:
-    - puppet
-  visiblename: puppet
-  version: 8.3.1
-  origversion: 8.3.1-1.fc39
-  status: outdated
-  summary: Network tool for managing many disparate systems
-  licenses:
-    - Apache-2.0
-  categories:
-    - Unspecified
-- repo: fedora_39
   subrepo: release
   srcname: puppet
   binnames:
@@ -78,6 +53,20 @@
   version: 8.1.0
   origversion: 8.1.0-2.fc39
   status: legacy
+  summary: Network tool for managing many disparate systems
+  licenses:
+    - Apache-2.0
+  categories:
+    - Unspecified
+- repo: fedora_39
+  subrepo: updates
+  srcname: puppet
+  binnames:
+    - puppet
+  visiblename: puppet
+  version: 8.3.1
+  origversion: 8.3.1-1.fc39
+  status: outdated
   summary: Network tool for managing many disparate systems
   licenses:
     - Apache-2.0
@@ -168,20 +157,6 @@
   categories:
     - Unspecified
 - repo: fedora_44
-  subrepo: updates
-  srcname: puppet
-  binnames:
-    - puppet
-  visiblename: puppet
-  version: 8.10.0
-  origversion: 8.10.0-5.fc44
-  status: newest
-  summary: Network tool for managing many disparate systems
-  licenses:
-    - Apache-2.0
-  categories:
-    - Unspecified
-- repo: fedora_44
   subrepo: release
   srcname: puppet
   binnames:
@@ -189,6 +164,20 @@
   visiblename: puppet
   version: 8.10.0
   origversion: 8.10.0-4.fc44
+  status: newest
+  summary: Network tool for managing many disparate systems
+  licenses:
+    - Apache-2.0
+  categories:
+    - Unspecified
+- repo: fedora_44
+  subrepo: updates
+  srcname: puppet
+  binnames:
+    - puppet
+  visiblename: puppet
+  version: 8.10.0
+  origversion: 8.10.0-5.fc44
   status: newest
   summary: Network tool for managing many disparate systems
   licenses:
@@ -434,23 +423,23 @@
   srcname: puppet
   binname: puppet
   visiblename: puppet
-  version: 8.10.0
-  origversion: 8.10.0-6
-  status: newest
+  version: 7.26.0
+  origversion: 7.26.0-1
+  status: outdated
   summary: Server automation framework and application
   licenses:
-    - Apache-2.0
+    - Apache
 - repo: manjaro_testing
   subrepo: extra
   srcname: puppet
   binname: puppet
   visiblename: puppet
-  version: 8.10.0
-  origversion: 8.10.0-6
-  status: newest
+  version: 7.26.0
+  origversion: 7.26.0-1
+  status: outdated
   summary: Server automation framework and application
   licenses:
-    - Apache-2.0
+    - Apache
 - repo: manjaro_unstable
   subrepo: extra
   srcname: puppet
@@ -479,6 +468,17 @@
   version: 8.6.0
   origversion: null
   status: outdated
+  summary: Server automation framework and application
+  maintainers:
+    - nixpkgs@superbaloo.net
+  licenses:
+    - Apache-2.0
+- repo: nix_stable_25_11
+  srcname: puppet
+  visiblename: puppet
+  version: 8.10.0
+  origversion: null
+  status: newest
   summary: Server automation framework and application
   maintainers:
     - nixpkgs@superbaloo.net
@@ -563,6 +563,13 @@
   summary: open source configuration management software
   licenses:
     - Apache Software License 2.0
+- repo: pld
+  srcname: puppet
+  visiblename: puppet
+  version: 3.7.5
+  origversion: 3.7.5-2
+  status: outdated
+  vulnerable: true
 - repo: amazon_1
   subrepo: main
   srcname: puppet3
@@ -718,13 +725,6 @@
   categories:
     - admin
   vulnerable: true
-- repo: pld
-  srcname: puppet
-  visiblename: puppet
-  version: 3.7.5
-  origversion: 3.7.5-2
-  status: outdated
-  vulnerable: true
 - repo: pureos_amber
   subrepo: amber/main
   srcname: puppet
@@ -879,32 +879,6 @@
     - admin
   vulnerable: true
 - repo: ubuntu_16_04
-  subrepo: xenial/universe
-  srcname: puppet
-  binnames:
-    - puppet-common
-    - puppet
-    - puppetmaster-common
-    - puppetmaster
-    - puppetmaster-passenger
-    - vim-puppet
-    - puppet-el
-    - puppet-testsuite
-  visiblename: puppet
-  version: 3.8.5
-  origversion: 3.8.5-2
-  status: outdated
-  maintainers:
-    - pkg-puppet-devel@lists.alioth.debian.org
-    - apoikos@debian.org
-    - apollock@debian.org
-    - micah@debian.org
-    - nigel@explanatorygap.net
-    - ssm@debian.org
-  categories:
-    - universe/admin
-  vulnerable: true
-- repo: ubuntu_16_04
   subrepo: xenial-updates/universe
   srcname: puppet
   binnames:
@@ -922,6 +896,32 @@
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
+    - apoikos@debian.org
+    - apollock@debian.org
+    - micah@debian.org
+    - nigel@explanatorygap.net
+    - ssm@debian.org
+  categories:
+    - universe/admin
+  vulnerable: true
+- repo: ubuntu_16_04
+  subrepo: xenial/universe
+  srcname: puppet
+  binnames:
+    - puppet-common
+    - puppet
+    - puppetmaster-common
+    - puppetmaster
+    - puppetmaster-passenger
+    - vim-puppet
+    - puppet-el
+    - puppet-testsuite
+  visiblename: puppet
+  version: 3.8.5
+  origversion: 3.8.5-2
+  status: outdated
+  maintainers:
+    - pkg-puppet-devel@lists.alioth.debian.org
     - apoikos@debian.org
     - apollock@debian.org
     - micah@debian.org
@@ -977,26 +977,6 @@
     - universe/admin
   vulnerable: true
 - repo: ubuntu_22_04
-  subrepo: jammy/universe
-  srcname: puppet
-  binnames:
-    - puppet
-    - puppet-master
-    - puppet-master-passenger
-  visiblename: puppet
-  version: 5.5.22
-  origversion: 5.5.22-4
-  status: outdated
-  maintainers:
-    - pkg-puppet-devel@alioth-lists.debian.net
-    - apoikos@debian.org
-    - apollock@debian.org
-    - micah@debian.org
-    - ssm@debian.org
-  categories:
-    - universe/admin
-  vulnerable: true
-- repo: ubuntu_22_04
   subrepo: jammy-updates/universe
   srcname: puppet
   binnames:
@@ -1009,6 +989,26 @@
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
+    - apoikos@debian.org
+    - apollock@debian.org
+    - micah@debian.org
+    - ssm@debian.org
+  categories:
+    - universe/admin
+  vulnerable: true
+- repo: ubuntu_22_04
+  subrepo: jammy/universe
+  srcname: puppet
+  binnames:
+    - puppet
+    - puppet-master
+    - puppet-master-passenger
+  visiblename: puppet
+  version: 5.5.22
+  origversion: 5.5.22-4
+  status: outdated
+  maintainers:
+    - pkg-puppet-devel@alioth-lists.debian.net
     - apoikos@debian.org
     - apollock@debian.org
     - micah@debian.org
