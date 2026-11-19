@@ -47,7 +47,7 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 7,982 · **Forks**: 2,202 · **Open issues**: 129 · **Contributors**: 585
+- **Stars**: 7,983 · **Forks**: 2,201 · **Open issues**: 129 · **Contributors**: 585
 
 ## Totals (cumulative)
 
@@ -57,16 +57,16 @@ Lowest-scoring checks:
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-17 | 0 | 0 | 0 | 0 | 0 | 0 |
-| last60d | 2026-09-17 | 0 | 0 | 1 | 0 | 1 | 0 |
-| 90d | 2026-08-18 | 0 | 0 | 1 | 0 | 1 | 0 |
-| last180d | 2026-05-20 | 0 | 0 | 3 | 0 | 1 | 0 |
-| 360d | 2025-11-21 | 0 | 0 | 8 | 0 | 5 | 0 |
-| last720d | 2024-11-26 | 0 | 1 | 16 | 8 | 22 | 4 |
+| 30d | 2026-10-20 | 0 | 0 | 0 | 0 | 0 | 0 |
+| last60d | 2026-09-20 | 0 | 0 | 1 | 0 | 1 | 0 |
+| 90d | 2026-08-21 | 0 | 0 | 1 | 0 | 1 | 0 |
+| last180d | 2026-05-23 | 0 | 0 | 3 | 0 | 1 | 0 |
+| 360d | 2025-11-24 | 0 | 0 | 8 | 0 | 5 | 0 |
+| last720d | 2024-11-29 | 0 | 1 | 16 | 8 | 21 | 3 |
 
 ## Distribution status
 
-Reported by **65** distros on [repology.org](https://repology.org/project/puppet). **24** are ✅ on the latest upstream release, **35** are ⚠️ on an older version.
+Reported by **64** distros on [repology.org](https://repology.org/project/puppet). **25** are ✅ on the latest upstream release, **33** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
@@ -82,4 +82,4 @@ Install metadata for puppet lives in the [x-cmd/install](https://github.com/x-cm
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261116.yml` · 2026-11-16T07:55:24Z._
+_Snapshot: `data/card/261119.yml` · 2026-11-19T10:15:36Z._
