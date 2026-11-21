@@ -22,7 +22,7 @@
     - Apache-2.0
   categories:
     - Unspecified
-- repo: mageia_10
+- repo: mageia_cauldron
   subrepo: core/release
   srcname: puppet
   binnames:
@@ -37,7 +37,7 @@
     - Apache Software License
   categories:
     - Monitoring
-- repo: mageia_cauldron
+- repo: mageia_10
   subrepo: core/release
   srcname: puppet
   binnames:
@@ -68,6 +68,30 @@
     - Apache Software License 2.0
   categories:
     - Monitoring
+- repo: manjaro_testing
+  subrepo: extra
+  srcname: puppet
+  binname: puppet
+  visiblename: puppet
+  version: 8.10.0
+  origversion: 8.10.0-6
+  status: newest
+  summary: Server automation framework and application
+  licenses:
+    - Apache-2.0
+  vulnerable: true
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: puppet
+  binname: puppet
+  visiblename: puppet
+  version: 8.10.0
+  origversion: 8.10.0-6
+  status: newest
+  summary: Server automation framework and application
+  licenses:
+    - Apache-2.0
+  vulnerable: true
 - repo: amazon_1
   subrepo: main
   srcname: puppet3
@@ -93,46 +117,6 @@
     - ASL 2.0
   categories:
     - System Environment/Base
-  vulnerable: true
-- repo: fedora_39
-  subrepo: release
-  srcname: puppet
-  binnames:
-    - puppet
-  visiblename: puppet
-  version: 8.1.0
-  origversion: 8.1.0-2.fc39
-  status: legacy
-  summary: Network tool for managing many disparate systems
-  licenses:
-    - Apache-2.0
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: wikidata
-  srcname: Q2095962
-  visiblename: Puppet
-  version: 8.10.0
-  origversion: null
-  status: newest
-  summary: open source configuration management software
-  licenses:
-    - Apache Software License 2.0
-  vulnerable: true
-- repo: fedora_39
-  subrepo: updates
-  srcname: puppet
-  binnames:
-    - puppet
-  visiblename: puppet
-  version: 8.3.1
-  origversion: 8.3.1-1.fc39
-  status: outdated
-  summary: Network tool for managing many disparate systems
-  licenses:
-    - Apache-2.0
-  categories:
-    - Unspecified
   vulnerable: true
 - repo: arch
   subrepo: extra
@@ -186,27 +170,6 @@
   categories:
     - admin
   vulnerable: true
-- repo: deepin_unstable
-  subrepo: main
-  srcname: puppet
-  binnames:
-    - puppet
-    - puppet-master
-    - puppetmaster
-    - puppet-master-passenger
-    - puppetmaster-passenger
-    - puppet-common
-  visiblename: puppet
-  version: 5.5.10
-  origversion: 5.5.10-4
-  status: outdated
-  maintainers:
-    - pkg-puppet-devel@lists.alioth.debian.org
-    - apoikos@debian.org
-    - apollock@debian.org
-    - micah@debian.org
-    - ssm@debian.org
-  vulnerable: true
 - repo: devuan_4_0
   subrepo: chimaera/main
   srcname: puppet
@@ -227,6 +190,36 @@
   categories:
     - admin
   vulnerable: true
+- repo: fedora_39
+  subrepo: updates
+  srcname: puppet
+  binnames:
+    - puppet
+  visiblename: puppet
+  version: 8.3.1
+  origversion: 8.3.1-1.fc39
+  status: outdated
+  summary: Network tool for managing many disparate systems
+  licenses:
+    - Apache-2.0
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: fedora_39
+  subrepo: release
+  srcname: puppet
+  binnames:
+    - puppet
+  visiblename: puppet
+  version: 8.1.0
+  origversion: 8.1.0-2.fc39
+  status: legacy
+  summary: Network tool for managing many disparate systems
+  licenses:
+    - Apache-2.0
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: fedora_40
   subrepo: release
   srcname: puppet
@@ -241,6 +234,18 @@
     - Apache-2.0
   categories:
     - Unspecified
+  vulnerable: true
+- repo: nix_stable_24_11
+  srcname: puppet
+  visiblename: puppet
+  version: 8.6.0
+  origversion: null
+  status: outdated
+  summary: Server automation framework and application
+  maintainers:
+    - nixpkgs@superbaloo.net
+  licenses:
+    - Apache-2.0
   vulnerable: true
 - repo: fedora_41
   subrepo: release
@@ -258,21 +263,6 @@
     - Unspecified
   vulnerable: true
 - repo: fedora_42
-  subrepo: release
-  srcname: puppet
-  binnames:
-    - puppet
-  visiblename: puppet
-  version: 8.6.0
-  origversion: 8.6.0-3.fc42
-  status: legacy
-  summary: Network tool for managing many disparate systems
-  licenses:
-    - Apache-2.0
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: fedora_42
   subrepo: updates
   srcname: puppet
   binnames:
@@ -281,6 +271,21 @@
   version: 8.10.0
   origversion: 8.10.0-3.fc42
   status: newest
+  summary: Network tool for managing many disparate systems
+  licenses:
+    - Apache-2.0
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: fedora_42
+  subrepo: release
+  srcname: puppet
+  binnames:
+    - puppet
+  visiblename: puppet
+  version: 8.6.0
+  origversion: 8.6.0-3.fc42
+  status: legacy
   summary: Network tool for managing many disparate systems
   licenses:
     - Apache-2.0
@@ -318,13 +323,13 @@
     - Unspecified
   vulnerable: true
 - repo: fedora_44
-  subrepo: release
+  subrepo: updates
   srcname: puppet
   binnames:
     - puppet
   visiblename: puppet
   version: 8.10.0
-  origversion: 8.10.0-4.fc44
+  origversion: 8.10.0-5.fc44
   status: newest
   summary: Network tool for managing many disparate systems
   licenses:
@@ -333,13 +338,13 @@
     - Unspecified
   vulnerable: true
 - repo: fedora_44
-  subrepo: updates
+  subrepo: release
   srcname: puppet
   binnames:
     - puppet
   visiblename: puppet
   version: 8.10.0
-  origversion: 8.10.0-5.fc44
+  origversion: 8.10.0-4.fc44
   status: newest
   summary: Network tool for managing many disparate systems
   licenses:
@@ -572,42 +577,6 @@
   origversion: 8.10.0-6
   status: newest
   summary: Server automation framework and application
-  licenses:
-    - Apache-2.0
-  vulnerable: true
-- repo: manjaro_testing
-  subrepo: extra
-  srcname: puppet
-  binname: puppet
-  visiblename: puppet
-  version: 8.10.0
-  origversion: 8.10.0-6
-  status: newest
-  summary: Server automation framework and application
-  licenses:
-    - Apache-2.0
-  vulnerable: true
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: puppet
-  binname: puppet
-  visiblename: puppet
-  version: 8.10.0
-  origversion: 8.10.0-6
-  status: newest
-  summary: Server automation framework and application
-  licenses:
-    - Apache-2.0
-  vulnerable: true
-- repo: nix_stable_24_11
-  srcname: puppet
-  visiblename: puppet
-  version: 8.6.0
-  origversion: null
-  status: outdated
-  summary: Server automation framework and application
-  maintainers:
-    - nixpkgs@superbaloo.net
   licenses:
     - Apache-2.0
   vulnerable: true
@@ -996,6 +965,26 @@
     - universe/admin
   vulnerable: true
 - repo: ubuntu_22_04
+  subrepo: jammy/universe
+  srcname: puppet
+  binnames:
+    - puppet
+    - puppet-master
+    - puppet-master-passenger
+  visiblename: puppet
+  version: 5.5.22
+  origversion: 5.5.22-4
+  status: outdated
+  maintainers:
+    - pkg-puppet-devel@alioth-lists.debian.net
+    - apoikos@debian.org
+    - apollock@debian.org
+    - micah@debian.org
+    - ssm@debian.org
+  categories:
+    - universe/admin
+  vulnerable: true
+- repo: ubuntu_22_04
   subrepo: jammy-updates/universe
   srcname: puppet
   binnames:
@@ -1015,23 +1004,13 @@
   categories:
     - universe/admin
   vulnerable: true
-- repo: ubuntu_22_04
-  subrepo: jammy/universe
-  srcname: puppet
-  binnames:
-    - puppet
-    - puppet-master
-    - puppet-master-passenger
-  visiblename: puppet
-  version: 5.5.22
-  origversion: 5.5.22-4
-  status: outdated
-  maintainers:
-    - pkg-puppet-devel@alioth-lists.debian.net
-    - apoikos@debian.org
-    - apollock@debian.org
-    - micah@debian.org
-    - ssm@debian.org
-  categories:
-    - universe/admin
+- repo: wikidata
+  srcname: Q2095962
+  visiblename: Puppet
+  version: 8.10.0
+  origversion: null
+  status: newest
+  summary: open source configuration management software
+  licenses:
+    - Apache Software License 2.0
   vulnerable: true
